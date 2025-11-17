@@ -1,5 +1,6 @@
 import React from 'react';
 import HeroBanner from './HeroBanner';
+import WhyHabits from './WhyHabits';
 
 const Home = () => {
     return (
@@ -7,6 +8,9 @@ const Home = () => {
             
             <section className='bg-cover'>
                     <HeroBanner></HeroBanner>
+            </section>
+            <section>
+                <WhyHabits></WhyHabits>
             </section>
             
             

@@ -1,19 +1,19 @@
 import React from "react";
-import { NavLink } from "react-router-dom"; // *** Use NavLink instead of Link for active styling ***
-import { Home, Plus, List, Settings } from 'lucide-react'; // Example: Import icons for visual aid
+import { NavLink } from "react-router-dom"; 
+import { Home, Plus, List, Settings } from 'lucide-react'; 
 
 const NavBar = () => {
  
  const linkClasses = ({ isActive }) =>
   `px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
     isActive
-      ? // ACTIVE STATE STYLES (Fuchsia Accent)
+      ? 
         "text-fuchsia-600 bg-fuchsia-100 border-b-2 border-fuchsia-400 " +
-        // Dark Mode Safety Check: Ensures visibility if dark mode is later introduced on a dark background
+       
         "dark:text-black-800 dark:bg-fuchsia-900/40 dark:border-fuchsia-400"
-      : // INACTIVE & HOVER STATE STYLES
+      : 
         "text-gray-600 hover:text-fuchsia-500 hover:bg-fuchsia-50 " +
-        // Dark Mode Safety Check
+        
         "dark:text-gray-500 dark:hover:text-fuchsia-300 dark:hover:bg-gray-700"
   }`;
 
